@@ -4,40 +4,39 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>學術簡介 | 黃靖雯</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap">
 <style>
-:root{--mist:#C4CBD9;--blue:#7481A7;--deep:#36425E;--text:#252A35;--paper:#fffefa;--base:#edf0f5;--rule:#dbe0e9;color-scheme:light}
+:root{color-scheme:light;--ink:#212121;--muted:#4f474e;--banner:#b0bec5;--pale:#e8eaeb;--rule:#dadce0}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--base);color:var(--text);font:16px/1.72 "Instrument Sans","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif}
-a{color:var(--deep);text-underline-offset:.2em}
-a:focus-visible{outline:2px solid var(--deep);outline-offset:4px}
-.shell{max-width:860px;margin:auto;padding:clamp(16px,3vw,48px)}
-.profile{background:var(--paper);border:1px solid var(--rule);border-radius:20px;overflow:hidden;box-shadow:0 10px 28px #36425e0e}
-.hero{padding:clamp(22px,3vw,40px);background:var(--mist);border-top:7px solid var(--blue)}
-.hero-top{display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--deep);font-weight:700}
-.switch,.profiles a{border:1px solid #71809c;border-radius:7px;text-decoration:none;font-weight:650}
-.switch{padding:4px 10px;font-size:.86rem}
-.identity{margin:28px 0 20px}
-.alternate{display:block;color:var(--deep);font-weight:650;letter-spacing:.04em}
-h1{font-size:clamp(2.05rem,3.6vw,3.65rem);letter-spacing:-.035em;line-height:1.1;margin:4px 0 10px;color:#20283a}
-.identity p{color:#29334a;line-height:1.45;margin:0}
-.profiles{display:flex;gap:8px;flex-wrap:wrap}
-.profiles a{padding:6px 10px;background:#ffffff89;font-size:.82rem}
-.profiles a:hover,.switch:hover{background:#fff}
-.sections{display:flex;flex-wrap:wrap;gap:7px 14px;padding:15px clamp(22px,3vw,40px);background:#f4f6f9;border-bottom:1px solid var(--rule);font-size:.8rem}
-.copy{padding:0 clamp(22px,3vw,40px) 28px;overflow-wrap:anywhere}
-.chapter{padding:24px 0;border-bottom:1px solid var(--rule);scroll-margin-top:16px}
-.chapter:last-child{border-bottom:0;padding-bottom:0}
-.chapter h2{font-size:clamp(1.04rem,1.5vw,1.3rem);line-height:1.35;margin:0 0 12px;border-left:4px solid var(--blue);padding-left:11px;color:#26314a}
-.chapter p{margin:0 0 .75em}
+body{margin:0;background:#fff;color:var(--ink);font:400 17.333px/1.56 Roboto,"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif}
+a{color:var(--muted);text-underline-offset:.2em}
+a:focus-visible{outline:2px solid var(--muted);outline-offset:4px}
+.identity,.profiles,.copy,.hero-top{padding-inline:clamp(22px,5vw,60px)}
+.masthead{background:#7481A7;color:#101625}
+.hero-top,.identity,.profiles,.copy{max-width:1160px;margin-inline:auto}
+.hero-top{display:flex;justify-content:space-between;align-items:center;min-height:56px;gap:16px;font-size:20px}
+.switch,.profiles a{display:inline-block;border:1px solid #71809c;border-radius:8px;background:#f7f8fa;color:#36425e;font-weight:700;text-decoration:none}
+.switch{padding:5px 12px;font-size:15px;white-space:nowrap}
+.profiles a{padding:6px 12px;font-size:.9rem}
+.switch:hover,.profiles a:hover{background:#e8eaeb}
+.identity{padding-top:30px}
+.identity h1{font-size:clamp(2rem,3.4vw,3.25rem);line-height:1.15;margin:4px 0 12px;font-weight:400}
+.alternate{display:block;color:inherit;font-size:1rem}
+.identity p{margin:0}
+.profiles{display:flex;flex-wrap:wrap;gap:8px 10px;padding-block:16px 24px}
+.copy{padding-bottom:48px;overflow-wrap:anywhere}
+.chapter{padding:27px 0;border-bottom:1px solid var(--rule);scroll-margin-top:12px}
+.chapter:last-child{border-bottom:0}
+.chapter h2{border-left:4px solid #7481A7;padding-left:11px;font-size:clamp(1.3rem,2.2vw,1.7rem);line-height:1.3;font-weight:400;margin:0 0 13px}
+.chapter p{margin:0 0 .85em}
 .chapter p:last-child{margin-bottom:0}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <main class="shell">
 <article class="profile">
 <header class="hero">
+<div class="masthead">
 <div class="hero-top"><span>學術簡介</span><a class="switch" href="biography.html">English <span aria-hidden="true">↗</span></a></div>
 <div class="identity"><span class="alternate">Jing-Wen Huang</span><h1>黃靖雯</h1><p>國立中山大學應用數學系助理教授</p></div>
 <nav class="profiles" aria-label="學術連結">
@@ -45,13 +44,14 @@ h1{font-size:clamp(2.05rem,3.6vw,3.65rem);letter-spacing:-.035em;line-height:1.1
 <a href="https://orcid.org/0000-0002-0525-8807">ORCID <span aria-hidden="true">↗</span></a>
 <a href="https://math.nsysu.edu.tw/p/406-1183-379968%2Cr2843.php?Lang=zh-tw">中山大學教師頁 <span aria-hidden="true">↗</span></a>
 </nav>
+</div>
 </header>
-<nav class="sections" aria-label="學術簡介"><a href="#section-1">研究方向、成果與學術交流</a><a href="#section-2">學歷與研究經歷</a><a href="#section-3">教學與統計諮詢</a><a href="#section-4">獎項與專利申請</a></nav>
-<div class="copy"><section class="chapter" id="section-1"><h2>研究方向、成果與學術交流</h2><p>她的研究方向包括網絡實驗設計、加料順序實驗設計、序列實驗設計與超飽和設計分析。</p>
+<div class="copy"><section class="chapter" id="section-1"><h2>研究概要</h2><p>她的研究方向包括網絡實驗設計、加料順序實驗設計、序列實驗設計與超飽和設計分析。</p>
 <p>黃靖雯的實驗設計成果包括加料順序篩選模型、完整相鄰順序配對（CCOP）設計及其距離型線性模型，以及在無結構處理條件下的網絡實驗最適設計。她也曾合作研究生醫診斷的標記篩選，以及帕金森氏症患者的失智預測。</p>
-<p>她於 2023 年在國際統計學會世界統計大會報告加料順序實驗設計，2024 年在 Virginia Tech 舉行的 Design and Analysis of Experiments 研討會報告加料順序篩選模型，2025 年在早稻田大學舉行的 International Conference on Econometrics and Statistics 報告生醫標記辨識。她也於 2025 年在臺灣多所大學的專題演講介紹 CCOP 設計。</p></section><section class="chapter" id="section-2"><h2>學歷與研究經歷</h2><p>黃靖雯於 2018 年 9 月至 2024 年 6 月在國立清華大學統計學研究所修讀直升博士班。博士論文題目為 <em>New Developments on the Design and Analysis of Some Modern Experiments</em>。</p>
+<p>她於 2023 年在國際統計學會世界統計大會報告加料順序實驗設計，2024 年在 Virginia Tech 舉行的 Design and Analysis of Experiments 研討會報告加料順序篩選模型，2025 年在早稻田大學舉行的 International Conference on Econometrics and Statistics 報告生醫標記辨識。她也於 2025 年在臺灣多所大學的專題演講介紹 CCOP 設計。</p></section><section class="chapter" id="section-2"><h2>學歷與經歷</h2><p>黃靖雯於 2018 年 9 月至 2024 年 6 月在國立清華大學統計學研究所修讀直升博士班。博士論文題目為 <em>New Developments on the Design and Analysis of Some Modern Experiments</em>。</p>
 <p>她於 2017 年 9 月至 2018 年 8 月在清大修讀統計學碩士班，2013 年 9 月至 2017 年 7 月在清大修讀數學學士班，並修習生命科學與醫學相關輔修。</p>
-<p>2023 年 2 月至 12 月，黃靖雯在加州大學洛杉磯分校統計與資料科學系擔任訪問研究員。2024 年 7 月至 2026 年 6 月，她在中央研究院統計科學研究所擔任博士後研究員。</p></section><section class="chapter" id="section-3"><h2>教學與統計諮詢</h2><p>她曾在清大擔任微積分（一）、數理統計及貝氏分析的助教。她於 2020 年 8 月至 2021 年 1 月參與 Micron 的統計諮詢，協助工程師建立實驗流程，並講授實驗設計與廣義線性模型。2021 年 1 月至 4 月，她參與 Appier 的統計建模與資料分析。</p></section><section class="chapter" id="section-4"><h2>獎項與專利申請</h2><p>黃靖雯曾獲清大梅貽琦紀念獎及傑出教學助理獎（2017）、第一屆全國碩士生統計研究成果研討會優秀論文海報獎（2018）、明基材料第七屆研究獎學金（2020）、千里馬計畫補助（2022）及魏慶榮論文獎佳作（2024）。她也名列 2024 年美國專利申請案 18/622,407。</p></section></div>
+<p>2023 年 2 月至 12 月，黃靖雯在加州大學洛杉磯分校統計與資料科學系擔任訪問研究員。2024 年 7 月至 2026 年 6 月，她在中央研究院統計科學研究所擔任博士後研究員。</p>
+<p>黃靖雯於 2020 年 8 月至 2021 年 1 月參與 Micron 的統計諮詢，協助工程師建立實驗流程，並講授實驗設計與廣義線性模型。2021 年 1 月至 4 月，她參與 Appier 的統計建模與資料分析。</p></section><section class="chapter" id="section-3"><h2>榮譽</h2><p>黃靖雯曾獲清大梅貽琦紀念獎及傑出教學助理獎（2017）、第一屆全國碩士生統計研究成果研討會優秀論文海報獎（2018）、明基材料第七屆研究獎學金（2020）、千里馬計畫補助（2022）及魏慶榮論文獎佳作（2024）。她也名列 2024 年美國專利申請案 18/622,407。</p></section></div>
 </article>
 </main>
 </body>

@@ -4,40 +4,39 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Biography | Jing-Wen Huang</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap">
 <style>
-:root{--mist:#C4CBD9;--blue:#7481A7;--deep:#36425E;--text:#252A35;--paper:#fffefa;--base:#edf0f5;--rule:#dbe0e9;color-scheme:light}
+:root{color-scheme:light;--ink:#212121;--muted:#4f474e;--banner:#b0bec5;--pale:#e8eaeb;--rule:#dadce0}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--base);color:var(--text);font:16px/1.72 "Instrument Sans","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif}
-a{color:var(--deep);text-underline-offset:.2em}
-a:focus-visible{outline:2px solid var(--deep);outline-offset:4px}
-.shell{max-width:860px;margin:auto;padding:clamp(16px,3vw,48px)}
-.profile{background:var(--paper);border:1px solid var(--rule);border-radius:20px;overflow:hidden;box-shadow:0 10px 28px #36425e0e}
-.hero{padding:clamp(22px,3vw,40px);background:var(--mist);border-top:7px solid var(--blue)}
-.hero-top{display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--deep);font-weight:700}
-.switch,.profiles a{border:1px solid #71809c;border-radius:7px;text-decoration:none;font-weight:650}
-.switch{padding:4px 10px;font-size:.86rem}
-.identity{margin:28px 0 20px}
-.alternate{display:block;color:var(--deep);font-weight:650;letter-spacing:.04em}
-h1{font-size:clamp(2.05rem,3.6vw,3.65rem);letter-spacing:-.035em;line-height:1.1;margin:4px 0 10px;color:#20283a}
-.identity p{color:#29334a;line-height:1.45;margin:0}
-.profiles{display:flex;gap:8px;flex-wrap:wrap}
-.profiles a{padding:6px 10px;background:#ffffff89;font-size:.82rem}
-.profiles a:hover,.switch:hover{background:#fff}
-.sections{display:flex;flex-wrap:wrap;gap:7px 14px;padding:15px clamp(22px,3vw,40px);background:#f4f6f9;border-bottom:1px solid var(--rule);font-size:.8rem}
-.copy{padding:0 clamp(22px,3vw,40px) 28px;overflow-wrap:anywhere}
-.chapter{padding:24px 0;border-bottom:1px solid var(--rule);scroll-margin-top:16px}
-.chapter:last-child{border-bottom:0;padding-bottom:0}
-.chapter h2{font-size:clamp(1.04rem,1.5vw,1.3rem);line-height:1.35;margin:0 0 12px;border-left:4px solid var(--blue);padding-left:11px;color:#26314a}
-.chapter p{margin:0 0 .75em}
+body{margin:0;background:#fff;color:var(--ink);font:400 17.333px/1.56 Roboto,"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif}
+a{color:var(--muted);text-underline-offset:.2em}
+a:focus-visible{outline:2px solid var(--muted);outline-offset:4px}
+.identity,.profiles,.copy,.hero-top{padding-inline:clamp(22px,5vw,60px)}
+.masthead{background:#7481A7;color:#101625}
+.hero-top,.identity,.profiles,.copy{max-width:1160px;margin-inline:auto}
+.hero-top{display:flex;justify-content:space-between;align-items:center;min-height:56px;gap:16px;font-size:20px}
+.switch,.profiles a{display:inline-block;border:1px solid #71809c;border-radius:8px;background:#f7f8fa;color:#36425e;font-weight:700;text-decoration:none}
+.switch{padding:5px 12px;font-size:15px;white-space:nowrap}
+.profiles a{padding:6px 12px;font-size:.9rem}
+.switch:hover,.profiles a:hover{background:#e8eaeb}
+.identity{padding-top:30px}
+.identity h1{font-size:clamp(2rem,3.4vw,3.25rem);line-height:1.15;margin:4px 0 12px;font-weight:400}
+.alternate{display:block;color:inherit;font-size:1rem}
+.identity p{margin:0}
+.profiles{display:flex;flex-wrap:wrap;gap:8px 10px;padding-block:16px 24px}
+.copy{padding-bottom:48px;overflow-wrap:anywhere}
+.chapter{padding:27px 0;border-bottom:1px solid var(--rule);scroll-margin-top:12px}
+.chapter:last-child{border-bottom:0}
+.chapter h2{border-left:4px solid #7481A7;padding-left:11px;font-size:clamp(1.3rem,2.2vw,1.7rem);line-height:1.3;font-weight:400;margin:0 0 13px}
+.chapter p{margin:0 0 .85em}
 .chapter p:last-child{margin-bottom:0}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <main class="shell">
 <article class="profile">
 <header class="hero">
+<div class="masthead">
 <div class="hero-top"><span>Biography</span><a class="switch" href="index.html">中文 <span aria-hidden="true">↗</span></a></div>
 <div class="identity"><span class="alternate">黃靖雯</span><h1>Jing-Wen Huang</h1><p>Assistant Professor of Applied Mathematics<br>National Sun Yat-sen University</p></div>
 <nav class="profiles" aria-label="Academic Profiles">
@@ -45,12 +44,13 @@ h1{font-size:clamp(2.05rem,3.6vw,3.65rem);letter-spacing:-.035em;line-height:1.1
 <a href="https://orcid.org/0000-0002-0525-8807">ORCID <span aria-hidden="true">↗</span></a>
 <a href="https://math.nsysu.edu.tw/p/406-1183-379968%2Cr2843.php?Lang=zh-tw">NSYSU Faculty Profile <span aria-hidden="true">↗</span></a>
 </nav>
+</div>
 </header>
-<nav class="sections" aria-label="Biography"><a href="#section-1">Research Interests, Publications, and Presentations</a><a href="#section-2">Education and Academic Appointments</a><a href="#section-3">Teaching and Consulting</a><a href="#section-4">Honors and Patent Application</a></nav>
-<div class="copy"><section class="chapter" id="section-1"><h2>Research Interests, Publications, and Presentations</h2><p>Her research interests include the design of network experiments, order-of-addition experiments, and sequential experiments, as well as the analysis of supersaturated designs.</p>
+<div class="copy"><section class="chapter" id="section-1"><h2>Research Summary</h2><p>Her research interests include the design of network experiments, order-of-addition experiments, and sequential experiments, as well as the analysis of supersaturated designs.</p>
 <p>Huang&#x27;s work includes models for order-of-addition screening experiments, complete consecutive order-pairing (CCOP) designs and their distance-based linear model, and optimal designs for network experiments with unstructured treatments. She has also collaborated on biomarker selection for biomedical diagnosis and prediction of dementia in patients with Parkinson&#x27;s disease.</p>
-<p>She presented work on order-of-addition experiments at the 2023 ISI World Statistics Congress and screening models at the 2024 Design and Analysis of Experiments conference at Virginia Tech. In 2025, she presented work on biomarker identification at the International Conference on Econometrics and Statistics at Waseda University and gave seminars on CCOP designs at several universities in Taiwan.</p></section><section class="chapter" id="section-2"><h2>Education and Academic Appointments</h2><p>Huang completed her Ph.D. in statistics at National Tsing Hua University in June 2024 after entering its direct doctoral program in September 2018. Her dissertation was titled <em>New Developments on the Design and Analysis of Some Modern Experiments</em>. She studied statistics in the master&#x27;s program at the same university from 2017 to 2018, following undergraduate studies in mathematics with a minor in life science and medical science from 2013 to 2017.</p>
-<p>She was a visiting research scholar in the Department of Statistics and Data Science at the University of California, Los Angeles, from February to December 2023. She was a postdoctoral fellow at the Institute of Statistical Science, Academia Sinica, from July 2024 to June 2026.</p></section><section class="chapter" id="section-3"><h2>Teaching and Consulting</h2><p>At National Tsing Hua University, Huang served as a teaching assistant for Calculus I, Mathematical Statistics, and Bayesian Analysis. From August 2020 to January 2021, she helped Micron engineers establish experimental procedures and taught design of experiments and generalized linear models. From January to April 2021, she contributed to statistical modeling and data analysis for Appier.</p></section><section class="chapter" id="section-4"><h2>Honors and Patent Application</h2><p>Her honors include the Mei Yiqi Memorial Medal and an excellent teaching assistant award (2017), an outstanding poster award at Taiwan&#x27;s first national conference on statistical research achievements for postgraduate students (2018), a BenQ Materials research scholarship (2020), a scholarship for doctoral research abroad (2022), and an honorable mention for the Ching-Zong Wei Award (2024). She is listed on U.S. patent application 18/622,407 (2024).</p></section></div>
+<p>She presented work on order-of-addition experiments at the 2023 ISI World Statistics Congress and screening models at the 2024 Design and Analysis of Experiments conference at Virginia Tech. In 2025, she presented work on biomarker identification at the International Conference on Econometrics and Statistics at Waseda University and gave seminars on CCOP designs at several universities in Taiwan.</p></section><section class="chapter" id="section-2"><h2>Education and Experience</h2><p>Huang completed her Ph.D. in statistics at National Tsing Hua University in June 2024 after entering its direct doctoral program in September 2018. Her dissertation was titled <em>New Developments on the Design and Analysis of Some Modern Experiments</em>. She studied statistics in the master&#x27;s program at the same university from 2017 to 2018, following undergraduate studies in mathematics with a minor in life science and medical science from 2013 to 2017.</p>
+<p>She was a visiting research scholar in the Department of Statistics and Data Science at the University of California, Los Angeles, from February to December 2023. She was a postdoctoral fellow at the Institute of Statistical Science, Academia Sinica, from July 2024 to June 2026.</p>
+<p>From August 2020 to January 2021, she helped Micron engineers establish experimental procedures and taught design of experiments and generalized linear models. From January to April 2021, she contributed to statistical modeling and data analysis for Appier.</p></section><section class="chapter" id="section-3"><h2>Honors</h2><p>Her honors include the Mei Yiqi Memorial Medal and an excellent teaching assistant award (2017), an outstanding poster award at Taiwan&#x27;s first national conference on statistical research achievements for postgraduate students (2018), a BenQ Materials research scholarship (2020), a scholarship for doctoral research abroad (2022), and an honorable mention for the Ching-Zong Wei Award (2024). She is listed on U.S. patent application 18/622,407 (2024).</p></section></div>
 </article>
 </main>
 </body>
